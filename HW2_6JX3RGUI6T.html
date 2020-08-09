@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+
+    <style>
+        .container{
+            width:20vw;
+            height: 55vh;
+            background-color: rgb(223, 149, 241);
+            margin: 0 auto;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+        .after{
+            margin-top: 80%; 
+        }
+        button:hover{
+            background-color: rgb(95, 12, 102);
+        }
+        .two{
+            padding-top: 5px;
+            width: 200px;
+            background-color: rgb(232, 211, 241);
+            border-radius: 5px;
+            
+                    }
+        .one{
+            padding-top: 5px;
+            width: 200px;
+            background-color: rgb(232, 211, 241 );
+            border-radius: 5px;
+        }
+    
+    </style>
+</head>
+<body>
+<div class="container" >
+    <div class="before" >
+        <div>
+            <p id="date"></p>
+        </div>
+        <div>
+        <button class="one" type="button"
+        onclick="document.getElementById('date').innerHTML = Date()">
+        GET DATE</button>
+        
+    </div>
+        
+    </div>
+    
+    <div class="after" >
+    <div>
+    <button class="two" type="button"
+    onclick="document.getElementById('date').innerHTML = Date()">
+    GET DATE</button>
+</div>
+    <div>
+        <p id="date"></p>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
